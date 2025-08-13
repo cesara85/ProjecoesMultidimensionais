@@ -31,7 +31,7 @@ pop_brasil <- pop_idade_sexo_edu %>%
 
 # estrutura etária
 ggplot(
-  pop_brasil %>% filter((Time==2022&scenario==1)|Time==2062), #apenas anos iniciais e finais
+  pop_brasil %>% filter((Time==2022&scenario==1)|Time==2062), #apenas anos iniciais e finais. Demais anos podem ser selcionados.
   aes(
     x = pop,
     y = as.factor(agest),
