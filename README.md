@@ -27,17 +27,17 @@ Abaixo seguem os resultados para o Brasil, considerando as mudanças na estrutur
 ## Métodos e dados
 A base incluída contém 3 cenários futuros da dinâmica demográfica e socioeducacional, baseados nas shared socioeconomic pathways - SSPs (RIAHI et al., 2017, KC;LUTZ, 2017) e segue pressupostos que combinam as projeções oficiais do Brasil (IBGE, 2024) com as utilizadas nas SSPs (WCDE, 2024).
 Cenários:
-SSP1 – Sustentabilidade. Há uma transição gradual para um desenvolvimento inclusivo, respeitando limites ambientais. Os avanços na gestão de bens comuns globais e investimentos em educação e saúde aceleram a transição demográfica, com diminuição da fecundidade e aumento da expectativa de vida. Governos e sociedades aumentam o foco no bem-estar, na redução da desigualdade e há menor uso de recursos naturais e energéticos.
-SSP2 - Meio do caminho. Há desafios intermediários à mitigação e adaptação. A desigualdade persiste, e o progresso para os Objetivos do Desenvolvimento Sustentável – ODSs, é lento. A degradação ambiental persiste, mas o uso de recursos naturais e energético apresenta diminuição. O crescimento populacional se estabiliza na segunda metade do século XXI, com tendência de mudança inercial da migração, fecundidade e mortalidade. Há persistentes desafios à redução da vulnerabilidade.
-SSP3 - Rivalidade regional. O nacionalismo é ascendente, e os conflitos regionais levam os países a priorizarem questões domésticas, com foco em segurança energética e alimentar. O desenvolvimento é lento, investimentos em educação e tecnologia diminuem, e o consumo de recursos é elevado. Desigualdades aumentam e a degradação ambiental é intensa em algumas regiões, especialmente nas menos desenvolvidas. Há estabilização dos níveis da mortalidade, fecundidade e migração.
+1. SSP1 – Sustentabilidade. Há uma transição gradual para um desenvolvimento inclusivo, respeitando limites ambientais. Os avanços na gestão de bens comuns globais e investimentos em educação e saúde aceleram a transição demográfica, com diminuição da fecundidade e aumento da expectativa de vida. Governos e sociedades aumentam o foco no bem-estar, na redução da desigualdade e há menor uso de recursos naturais e energéticos.
+2. SSP2 - Meio do caminho. Há desafios intermediários à mitigação e adaptação. A desigualdade persiste, e o progresso para os Objetivos do Desenvolvimento Sustentável – ODSs, é lento. A degradação ambiental persiste, mas o uso de recursos naturais e energético apresenta diminuição. O crescimento populacional se estabiliza na segunda metade do século XXI, com tendência de mudança inercial da migração, fecundidade e mortalidade. Há persistentes desafios à redução da vulnerabilidade.
+3. SSP3 - Rivalidade regional. O nacionalismo é ascendente, e os conflitos regionais levam os países a priorizarem questões domésticas, com foco em segurança energética e alimentar. O desenvolvimento é lento, investimentos em educação e tecnologia diminuem, e o consumo de recursos é elevado. Desigualdades aumentam e a degradação ambiental é intensa em algumas regiões, especialmente nas menos desenvolvidas. Há estabilização dos níveis da mortalidade, fecundidade e migração.
 
 
 - Nome do arquivo, fonte, período e dicionário de variáveis principais.
 
-IBGE. Projeções da População: Brasil e Unidades da Federação. Estimativas e Projeções: Revisão 2024, Notas metodológicas 01/2024. IBGE, Rio de Janeiro, 2024.
-RIAHI, K. et al. The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview. Global Environmental Change, v. 42, pp. 153-168, 2017.
-KC, S.; LUTZ, W. The human core of the shared socioeconomic pathways: Population scenarios by age, sex and level of education for all countries to 2100. Global Environmental Change, v. 42, pp 181-192, 2017.
-WITTGENSTEIN CENTRE FOR DEMOGRAPHY AND GLOBAL HUMAN CAPITAL. Human Capital Data Explorer Version 3.0. 2024. Disponível em http://dataexplorer.wittgensteincentre.org/wcde-v3/
+- IBGE. Projeções da População: Brasil e Unidades da Federação. Estimativas e Projeções: Revisão 2024, Notas metodológicas 01/2024. IBGE, Rio de Janeiro, 2024.
+- RIAHI, K. et al. The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview. Global Environmental Change, v. 42, pp. 153-168, 2017.
+- KC, S.; LUTZ, W. The human core of the shared socioeconomic pathways: Population scenarios by age, sex and level of education for all countries to 2100. Global Environmental Change, v. 42, pp 181-192, 2017.
+- WITTGENSTEIN CENTRE FOR DEMOGRAPHY AND GLOBAL HUMAN CAPITAL. Human Capital Data Explorer Version 3.0. 2024. Disponível em http://dataexplorer.wittgensteincentre.org/wcde-v3/
 
 ## Resultados gerais
 
