@@ -1,0 +1,62 @@
+---
+title: "Estruturas Etárias - Brasil - 2022-2062"
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(gganimate)
+library(gifski)
+library(tidyr)
+options(scipen=999)
+
+```
+
+## Estrutura Etária do Brasil - 2022-2062
+
+# População total do Brasil
+pop_brasil <- pop_idade_sexo_edu %>%
+  group_by(sex,agest,edu,scenario,Time) %>%
+  summarise(pop = sum(pop)) %>% 
+  mutate(sex_label = ifelse(sex == "m", "Homens", "Mulheres"),
+        pop = ifelse(sex == "m", -pop, pop), # homens negativos p/ pirâmide
+        edu = case_when(
+      agest %in% 0:10 ~ "Menos de 15 anos",
+      edu == "e1" ~ "Sem instrução",
+      edu == "e2" ~ "Primário incompleto",
+      edu == "e3" ~ "Primário completo",
+      edu == "e4" ~ "Fundamental completo",
+      edu == "e5" ~ "Médio completo",
+      edu == "e6" ~ "Superior completo"))
+
+# estrutura etária
+ggplot(
+  pop_brasil %>% filter((Time==2022&scenario==1)|Time==2062), #apenas anos iniciais e finais
+  aes(
+    x = pop,
+    y = as.factor(agest),
+    fill = fct_relevel(
+      edu,
+      "Superior completo", "Médio completo", "Fundamental completo",
+      "Primário completo", "Primário incompleto", "Sem instrução", "Menos de 15 anos")
+      )
+      ) +
+      geom_col() +
+      geom_vline(xintercept = 0) +
+      facet_wrap(~scenario+Time)+
+      scale_fill_manual(values = wic_col6) +  # Paleta da WCDE
+      scale_x_continuous(labels = abs) +
+      labs(x = "População",y = "Grupo etário",
+      fill = "Escolaridade") +
+  theme(
+    legend.title = element_text(size = 11, face = "bold", hjust = 0.5),
+    legend.text = element_text(size = 10),
+    legend.position = "bottom",
+    legend.direction = "horizontal",
+    axis.text.y = element_text(size = 11),
+    axis.title.y = element_text(size = 11, margin = margin(r = 5)),
+    axis.title.x = element_text(size = 11),
+    axis.text.x = element_text(size = 11),
+    strip.text = element_text(face = "bold", size = 11),
+    panel.grid.major = element_blank()) +
+  guides(fill = guide_legend(title.position = "top", label.hjust = 0))
