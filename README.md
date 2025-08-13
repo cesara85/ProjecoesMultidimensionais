@@ -18,12 +18,6 @@ SPERINGER, M. et al. Global Reconstruction of Educational Attainment, 1950 to 20
 A metodologia completa para a realização do trabalho e os códigos podem ser solicitados ao pesquisador.
 Abaixo seguem os resultados para o Brasil, considerando as mudanças na estrutura etária por sexo, idade e nível educacional.
 
-
-## Como usar
-1. Clone o repositório.
-2. (Opcional) Crie um ambiente e instale dependências conforme os scripts em `scripts/`.
-3. Execute os scripts na ordem indicada nos comentários de cada arquivo.
-
 ## Métodos e dados
 A base incluída contém 3 cenários futuros da dinâmica demográfica e socioeducacional, baseados nas shared socioeconomic pathways - SSPs (RIAHI et al., 2017, KC;LUTZ, 2017) e segue pressupostos que combinam as projeções oficiais do Brasil (IBGE, 2024) com as utilizadas nas SSPs (WCDE, 2024).
 Cenários:
@@ -32,7 +26,17 @@ Cenários:
 3. SSP3 - Rivalidade regional. O nacionalismo é ascendente, e os conflitos regionais levam os países a priorizarem questões domésticas, com foco em segurança energética e alimentar. O desenvolvimento é lento, investimentos em educação e tecnologia diminuem, e o consumo de recursos é elevado. Desigualdades aumentam e a degradação ambiental é intensa em algumas regiões, especialmente nas menos desenvolvidas. Há estabilização dos níveis da mortalidade, fecundidade e migração.
 
 
-- Nome do arquivo, fonte, período e dicionário de variáveis principais.
+- Base de dados: pop_idade_sexo_edu.csv. 
+Variáveis: 
+1. region = Código da UF (IBGE);
+2. area = Sigla da UF;
+3. Time = ano projetado;
+4. sex = sexo do grupo (f = mulheres; m = homens);
+5. edu = grupo educacional;
+6. agest = grupo etário quinquenal (o valor se refere ao início do grupo etário; último grupo etário de 80 anos e mais);
+7. scenario = cenário SSP;
+8. pop = tamanho da população.
+
 
 - IBGE. Projeções da População: Brasil e Unidades da Federação. Estimativas e Projeções: Revisão 2024, Notas metodológicas 01/2024. IBGE, Rio de Janeiro, 2024.
 - RIAHI, K. et al. The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview. Global Environmental Change, v. 42, pp. 153-168, 2017.
@@ -40,9 +44,11 @@ Cenários:
 - WITTGENSTEIN CENTRE FOR DEMOGRAPHY AND GLOBAL HUMAN CAPITAL. Human Capital Data Explorer Version 3.0. 2024. Disponível em http://dataexplorer.wittgensteincentre.org/wcde-v3/
 
 ## Resultados gerais
+O arquivo Estruturas_Etarias.R traz o exemplo das estruturas etárias para o Brasil, utilizando a base de dados com os resultados.
 
 ## Licença
 Creative Commons 4.0 (CC by 4.0).
 
 ## Contato
-Cesar Marques — (adicione e-mail)
+Cesar Marques — (cesar.m.silva@ibge.gov.br)
+Escola Nacional de Ciências Estatísticas - ENCE/IBGE
