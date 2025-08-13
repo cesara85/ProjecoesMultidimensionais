@@ -30,7 +30,7 @@ pop_brasil <- pop_idade_sexo_edu %>%
       edu == "e6" ~ "Superior completo"))
 
 # estrutura etária
-ggplot(
+ea2022_62 <- ggplot(
   pop_brasil %>% filter((Time==2022&scenario==1)|Time==2062), #apenas anos iniciais e finais. Demais anos podem ser selcionados.
   aes(
     x = pop,
@@ -60,3 +60,5 @@ ggplot(
     strip.text = element_text(face = "bold", size = 11),
     panel.grid.major = element_blank()) +
   guides(fill = guide_legend(title.position = "top", label.hjust = 0))
+  
+ggsave("figuras/estrutura_etaria.png", ea2022_62, width = 10, height = 10)  
