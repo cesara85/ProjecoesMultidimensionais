@@ -44,7 +44,11 @@ Variáveis:
 - WITTGENSTEIN CENTRE FOR DEMOGRAPHY AND GLOBAL HUMAN CAPITAL. Human Capital Data Explorer Version 3.0. 2024. Disponível em http://dataexplorer.wittgensteincentre.org/wcde-v3/
 
 ## Resultados gerais
-O arquivo Estruturas_Etarias.R traz o exemplo das estruturas etárias para o Brasil, utilizando a base de dados com os resultados.
+O arquivo Estruturas_Etarias.Rmd traz o exemplo das estruturas etárias para o Brasil, utilizando a base de dados com os resultados.
+A estrutura etária do Brasil em 2022, e as 3 relativas aos cenários 1, 2 e 3, segue na Figura abaixo.
+# Estrutura Etária do Brasil - 2022 e 2062
+
+![Estrutura Etária](figuras/estrutura_etaria.png)
 
 ## Licença
 Creative Commons 4.0 (CC by 4.0).
